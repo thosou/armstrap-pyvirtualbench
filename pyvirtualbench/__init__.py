@@ -6,16 +6,38 @@ Created on Wed Jun 24 09:21:10 2020
 """
 
 
-from setuptools import setup, find_packages
-
-setup(
-    name="pyvirtualbench",
-    use_scm_version=True,
-    setup_requires=["setuptools_scm"],
-    description="NI virtualbench python wrapper",
-    url="https://github.com/armstrap/armstrap-pyvirtualbench",
-    author="Pyvirtualbench developers",
-    zip_safe=False,
-    packages=find_packages(),    
-    install_requires=[],
-)
+from .pyvirtualbench import (
+    Language,
+    Edge,
+    EdgeWithEither,
+    ClockPhase,
+    Polarity,
+    Waveform,
+    CalibrationAction,
+    DigitalSignalSource,
+    FGenWaveformMode,
+    FGenGenerationStatus,
+    MsoProbeAttenuation,
+    MsoCoupling,
+    MsoSamplingMode,
+    MsoDigitalSampleRateControl,
+    MsoBufferControl,
+    MsoTriggerInstance,
+    MsoTriggerType,
+    MsoAcquisitionStatus,
+    MsoTriggerReason,
+    MsoComparisonMode,
+    MsoTriggerPolarity,
+    MsoInputImpedance,
+    DmmFunction,
+    DmmCurrentTerminal,
+    DmmInputResistance,
+    PsState,
+    PsCalType,
+    I2cAddressSize,
+    I2cClockRate,
+    Status,
+    Timestamp,
+    PyVirtualBenchException,
+    PyVirtualBench,
+    )
